@@ -21,6 +21,8 @@ A simple web application with the following:
 
 ## Tips
 * Fork this repository and make your own
+* Feel free to update laravel installation and other packages
 * Feel free to use existing docker configuration
+* Feel free to add any additional functionality
 * Write a detailed description on how to launch project if you chose not to use existing docker configuration
 * Keep everything simple
