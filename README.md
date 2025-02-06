@@ -26,3 +26,7 @@ A simple web application with the following:
 * Feel free to add any additional functionality
 * Write a detailed description on how to launch project if you chose not to use existing docker configuration
 * Keep everything simple
+
+
+docker compose -f docker/compose.yml --env-file src/.env.example up -d --build
+docker exec php-fpm sh -c "cp .env.example .env && composer install && php artisan migrate:install && php artisan migrate && php artisan key:generate && npm install && npm run build && php artisan app:import-product && cron"
